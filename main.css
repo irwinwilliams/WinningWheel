@@ -59,27 +59,30 @@ p.noCanvasMsg
 {
     background-image: url(wheel_back.60.png);
     background-repeat: no-repeat;
-    background-position:center;
+    background-position:top center;
     /*width: 260px;
     height: 260px;*/
-    padding-top:88px;
+    /*padding-top:88px;*/
 }
 
 canvas
 {
-    /*margin-top:-40px;*/
+    margin-top: 44px;
 }
 
 #page2 a
 {
-    padding-top:40px;
+  margin: 40px auto;
+    width: 150px;
+    text-align: center;
     text-decoration: none;
-    display:block;
-    /*height:40px;
-    width:70px;
-    color:chartreuse;
-    margin:0 auto;*/
+    display: block;
     font-weight: bold;
-    cursor:pointer;
+    cursor: pointer;
     
+}
+
+.topcoat-checkbox__checkmark {
+width: inherit;
+height: 2rem;
 }

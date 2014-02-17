@@ -2,34 +2,60 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <title>Winning Wheel</title>
-    <link rel="stylesheet" href="./main.css" type="text/css" />
     <link rel="stylesheet" href="./topcoat-mobile-light.css" type="text/css" />
+    <link rel="stylesheet" href="./main.css" type="text/css" />
     <script type='text/javascript' src='winwheel_1.2.js'></script>
     <script type='text/javascript' src='jquery-1.9.1.min.js'></script>
 </head>
 <body>
-    <h1>Winning Wheel</h1>
+    <h1 class="center">Spin to Win</h1>
     <div id="page1" class="center">
-        <aside>
-            Spin the wheel, see what number wins!
-        </aside>
         <h2>Power level</h2>
+        <div class="topcoat-button-bar center" style="text-align:center; margin:0 auto;">
+            <label class="topcoat-button-bar__item">
+                <input type="checkbox" class="3">
+                <button class="topcoat-button-bar__button" id="pw3" onclick="powerSelected(3);">High</button>
+            </label>
+            <label class="topcoat-button-bar__item">
+                <input type="checkbox" class="2">
+                <button class="topcoat-button-bar__button" id="pw2" onclick="powerSelected(2);">Med</button>
+            </label>
+            <label class="topcoat-button-bar__item">
+                <input type="checkbox" checked="checked" class="1">
+                <button class="topcoat-button-bar__button" id="pw1" onclick="powerSelected(1);">Low</button>
+            </label>
+        </div>
 
-        <button class="topcoat-button" id="pw3" onclick="powerSelected(3);">High</button>
-        <button class="topcoat-button" id="pw2" onclick="powerSelected(2);">Med</button>
-        <button class="topcoat-button" id="pw1" onclick="powerSelected(1);">Low</button>
+        <div class="spacer">
+            <hr>
+        </div>
+        <label class="topcoat-checkbox">
+            <input type="checkbox" id="chkPrize" />
+            <div class="topcoat-checkbox__checkmark"></div>
+            &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; Detect prize
+        </label>
+        <br />
+        <br />        
         <img id="spin_button" src="./spin_off.png" alt="Spin" onclick="showSpinnerAndStartSpin();" />
     </div>
     <div id="page2" class="center" style="display:none">
         <div class="center" id="theWheelContainer">
             <canvas class="the_canvas" id="myDrawingCanvas" width="260" height="260"></canvas>
-            <a href="#" class="button" onclick="showPageOneAndReset(); return false;">Play Again</a>
-        </div>
+            <a class="topcoat-button" onclick=" showPageOneAndReset(); return false;">Play Again</a>
+</div>
         
     </div>
+    <footer class="center">
+        <strong>BrightPath Foundation Apps for Education Collection</strong>
+    </footer>
     <script>
         function showSpinnerAndStartSpin()
         {
+            if ($("#chkPrize").is(':checked')) {
+                doPrizeDetection = true;
+            } else {
+                doPrizeDetection = false;
+            }
             $("#page1").hide();
             $("#page2").show();
             startSpin();
@@ -45,7 +71,7 @@
         }
 
         begin();
-
+        powerSelected(1);
     </script>
 </body>
 </html>

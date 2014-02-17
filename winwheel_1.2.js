@@ -42,7 +42,7 @@ var spinButtonImgOn  = "spin_on.png";		// Name / path to the images for the spin
 var spinButtonImgOff = "spin_off.png";
 var theSpeed         = 20; 		 // Controls how often the spin function is called (is miliseconds value for animation timer).
 var pointerAngle     = 0;  	 	 // The angle / location around the wheel where the pointer indicaing the prize is located. Can be any value you like, 0 is top (12 oclock) 180 is bottom (6 o'clock) etc.
-var doPrizeDetection = true; 	 // Set to true if you want the code to detect the prize the user has won when the spinning has stopped. Prizes need to be specified in the prizes array.
+var doPrizeDetection = false; 	 // Set to true if you want the code to detect the prize the user has won when the spinning has stopped. Prizes need to be specified in the prizes array.
 var spinMode         = "random"; // Values can be: random, determinedAngle, determinedPrize.
 var determinedGetUrl = "";  	 // Set to URL of the server-side process to load via ajax when spinMode is determinedAngle or determinedPrize.
 /*
@@ -400,7 +400,10 @@ function powerSelected(powerLevel)
 			
 		if (powerLevel >= 3)
 			document.getElementById('pw3').className = "pw3";*/
-		
+	    $("input").prop('checked', false);
+	    $("."+powerLevel).prop('checked', true);
+
+
 		// Set internal power variable.
 		power = powerLevel;
 		
