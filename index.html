@@ -9,7 +9,7 @@
 </head>
 <body>
     <h1>Winning Wheel</h1>
-    <div id="page1">
+    <div id="page1" class="center">
         <aside>
             Spin the wheel, see what number wins!
         </aside>
@@ -20,9 +20,12 @@
         <button class="topcoat-button" id="pw1" onclick="powerSelected(1);">Low</button>
         <img id="spin_button" src="./spin_off.png" alt="Spin" onclick="showSpinnerAndStartSpin();" />
     </div>
-    <div id="page2" style="display:none">
-        <canvas class="the_canvas" id="myDrawingCanvas" width="347" height="347"></canvas>
-        <a href="#" onclick="showPageOneAndReset(); return false;">Play Again</a>
+    <div id="page2" class="center" style="display:none">
+        <div class="center" id="theWheelContainer">
+            <canvas class="the_canvas" id="myDrawingCanvas" width="260" height="260"></canvas>
+            <a href="#" class="button" onclick="showPageOneAndReset(); return false;">Play Again</a>
+        </div>
+        
     </div>
     <script>
         function showSpinnerAndStartSpin()

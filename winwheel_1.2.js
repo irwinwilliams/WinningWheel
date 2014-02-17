@@ -37,7 +37,7 @@ Version History:
 // --------------------------------
 // VARIABLES YOU CAN ALTER...
 var canvasId         = "myDrawingCanvas";   // Id of the canvas element on the page the wheel is to be rendered on.
-var wheelImageName   = "prizewheel.80.png";	// File name of the image for the wheel.
+var wheelImageName   = "prizewheel.60.png";	// File name of the image for the wheel.
 var spinButtonImgOn  = "spin_on.png";		// Name / path to the images for the spin button.
 var spinButtonImgOff = "spin_off.png";
 var theSpeed         = 20; 		 // Controls how often the spin function is called (is miliseconds value for animation timer).
