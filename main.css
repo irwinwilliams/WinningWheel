@@ -58,11 +58,11 @@ p.noCanvasMsg
 #page2
 {
     text-align:center;
-    background-image: url(wheel_back.png);
+    background-image: url(wheel_back.80.png);
     background-repeat: no-repeat;
     background-position:center;
-    width: 438px;
-    height: 555px;
+    width: 350px;
+    height: 460px;
 }
 
 canvas
