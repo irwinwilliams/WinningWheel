@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<widget id="com.gctlabs.winningwheel" version="0.0.1">
+  <name>WinningWheel</name>
+  <description>
+    A simple winning wheel app
+  </description>
+  <author email="irwin.williams @ find me on congressmail" href="http://gctlabs.com">
+    Irwin Williams @ Congress-WBN
+  </author>
+  <content src="index.html" />
+  <access origin="*" />
+  <preference name="Fullscreen" value="true" />
+  <preference name="WebViewBounce" value="false" />
+</widget>
