@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Winning Wheel</title>
+    <link rel="stylesheet" href="./main.css" type="text/css" />
+    <link rel="stylesheet" href="./topcoat-mobile-light.css" type="text/css" />
+    <script type='text/javascript' src='winwheel_1.2.js'></script>
+    <script type='text/javascript' src='jquery-1.9.1.min.js'></script>
+</head>
+<body>
+    <h1>Winning Wheel</h1>
+    <div id="page1">
+        <aside>
+            Spin the wheel, see what number wins!
+        </aside>
+        <h2>Power level</h2>
+
+        <button class="topcoat-button" id="pw3" onclick="powerSelected(3);">High</button>
+        <button class="topcoat-button" id="pw2" onclick="powerSelected(2);">Med</button>
+        <button class="topcoat-button" id="pw1" onclick="powerSelected(1);">Low</button>
+        <img id="spin_button" src="./spin_off.png" alt="Spin" onclick="showSpinnerAndStartSpin();" />
+    </div>
+    <div id="page2" style="display:none">
+        <canvas class="the_canvas" id="myDrawingCanvas" width="434" height="434"></canvas>
+        <a href="#" onclick="showPageOneAndReset(); return false;">Play Again</a>
+    </div>
+    <script>
+        function showSpinnerAndStartSpin()
+        {
+            $("#page1").hide();
+            $("#page2").show();
+            startSpin();
+            return false;
+        }
+
+        function showPageOneAndReset()
+        {
+            $("#page2").hide();
+            $("#page1").show();
+            resetWheel();
+            return false;
+        }
+
+        begin();
+
+    </script>
+</body>
+</html>
+

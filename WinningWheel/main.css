@@ -1,0 +1,80 @@
+/* Do some css reset on selected elements */
+h1, p
+{
+	margin: 0;
+}
+
+div.power_controls
+{
+	margin-right:70px;
+}
+
+div.html5_logo
+{
+	margin-left:70px;
+}
+
+/* Styles for the power selection controls */
+table.power
+{
+	background-color: #cccccc;
+	cursor: pointer;
+	border:1px solid #333333;
+}
+
+
+.pw1
+{
+	background-color: #6fe8f0;
+}
+
+.pw2
+{
+	background-color: #86ef6f;
+}
+
+.pw3
+{
+	background-color: #ef6f6f;
+}
+
+/* Style applied to the spin button once a power has been selected */
+.clickable
+{
+	cursor: pointer;
+}
+
+/* Other misc styles */
+.margin_bottom
+{
+	margin-bottom: 5px;
+}
+
+p.noCanvasMsg
+{
+	color: white;
+}
+
+#page2
+{
+    text-align:center;
+    background-image: url(wheel_back.png);
+    background-repeat: no-repeat;
+    background-position:center;
+    width: 438px;
+    height: 555px;
+}
+
+canvas
+{
+    padding-top:60px;
+}
+
+#page2 a
+{
+    text-decoration: none;
+    display:block;
+    padding-top:60px;
+    font-weight: bold;
+    color:chartreuse;
+}
