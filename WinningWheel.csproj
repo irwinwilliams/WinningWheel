@@ -61,12 +61,14 @@
     <Content Include="index.html" />
     <Content Include="jquery-1.9.1.min.js" />
     <Content Include="main.css" />
+    <Content Include="prizewheel.60.png" />
     <Content Include="prizewheel.80.png" />
     <Content Include="prizewheel.png" />
     <Content Include="spin_off.png" />
     <Content Include="spin_on.png" />
     <Content Include="topcoat-mobile-light.css" />
     <Content Include="Web.config" />
+    <Content Include="wheel_back.60.png" />
     <Content Include="wheel_back.80.png" />
     <Content Include="wheel_back.png" />
     <Content Include="winwheel_1.2.js" />
